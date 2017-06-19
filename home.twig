@@ -1,0 +1,58 @@
+{% extends "layout.twig" %}
+
+{% block content %}
+
+<div class="bk-pt-home">
+
+        <div class="main-content"><!-- adds sticky footer-->
+
+        <div class="feature-container">
+
+                {{widget('feature', 'featurehome', {
+                    "header": "profile",
+                    "strapline": "profile",
+                    "defaultBgImg": asset('images/feature-bg.jpg'),
+                    'positionTopPercentage': '0',
+                    'showBtn': true,
+                    buttonText: "Lorem Ipsum"
+                })|raw}}
+    
+                {% include "includes/header.twig" %}
+    
+                <div class="homepage-info">
+                    {{widget('content', 'sidebarcontent', {
+                        content: '<p>Lorem ipsum dolor sit amet...</p>'
+                    })|raw}}
+                </div>
+
+            </div>
+
+            <!-- Container -->
+            <div class="container">
+
+                <!-- Page Content -->
+                <section class="template-content">
+
+                <!-- Main Widget Zone -->
+                {{zone('main')|raw}}
+
+                </section>
+                <!-- End Page Content -->
+
+            </div><!-- End Container -->
+
+        </div><!-- End main-content -->
+
+</div>
+
+<div class="outer-footer">
+    {{widget('profile', 'map', {
+      'profileType':'map',
+      'mapAddress':'BS1 2ND',
+      'mapHeight':'400'
+    })|raw}}
+</div>
+
+{% include "includes/footer.twig" %}
+
+{% endblock %}

@@ -1,2 +1,2 @@
-# sky-template
-Amazon Japanese Template
+# mono
+Basekit V8 Template

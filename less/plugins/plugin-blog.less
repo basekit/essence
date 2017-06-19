@@ -1,0 +1,230 @@
+// --------------------------------
+// Mono: plugin-blog.less
+// --------------------------------
+
+
+
+// --------------------------------
+// Blog Post List
+// --------------------------------
+
+
+.blogpostlist {
+
+    margin-bottom: 20px;
+
+
+    // Blog Article
+    // ---------------
+
+    .post-article {
+        background-color: @color-swatch1;
+        margin-bottom: 0;
+
+        .flex(@display: flex);
+        .justify-content(@justify: space-between);
+        .flex-wrap(@wrap: wrap);
+
+
+
+
+        &:nth-of-type(even) {
+            .post-image {
+                .flex-order(@order: 1);
+            }
+
+
+            .post-content {
+                .flex-order(@order: 0);
+            }
+
+
+            .post-footer {
+                text-align: left;
+            }
+        }
+    }
+
+
+
+        // Blog Image
+        // ---------------
+
+        .post-image {
+            -webkit-flex: 0 1 50%;
+                -ms-flex: 0 1 50%;
+                    flex: 0 1 50%;
+            .flex-order(@order: 0);
+
+
+            // Image Link
+            .image-link {
+                background-position: 0;
+                position: relative;
+                display: inline-block;
+                height: 300px;
+                width: 100%;
+                background-size: cover;
+                background-position: 50%;
+            }
+
+
+            .image {
+                width: 0;
+                height: 0;
+
+            }
+        }
+
+
+
+
+        // Blog Post Content
+        // -----------------
+
+        .post-content {
+            -webkit-flex: 1 0 45%;
+                -ms-flex: 1 0 45%;
+                    flex: 1 0 45%;
+            .flex-order(@order: 1);
+
+            padding: 20px 40px;
+        }
+
+
+
+
+        // Blog Post Title
+        // -----------------
+        .post-title,
+        .post-excerpt {
+              margin-bottom: 10px;
+        }
+
+        // Blog Post Footer
+        // ----------------
+
+        .post-footer {
+            -webkit-flex: 0 1 100%;
+                -ms-flex: 0 1 100%;
+                    flex: 0 1 100%;
+            .flex-order(@order: 2);
+            text-align: right;
+            margin-top: -50px;
+
+            .timestamp {
+                margin: 0 20px 40px;
+                font-size: 14px;
+                color: @paragraph-color;
+            }
+        }
+
+
+
+
+    // Tablet Breakpoint
+    // -----------------
+
+    @media @bp-tablet {
+
+
+        // Sets image and content above and below each other
+        .post-image,
+        .post-content {
+            -webkit-flex: 0 1 100%;
+                -ms-flex: 0 1 100%;
+                    flex: 0 1 100%;
+        }
+
+
+
+        // Blog Article
+        // ---------------
+
+        .post-article {
+        &:nth-of-type(even) {
+                .post-image {
+                    .flex-order(@order: 0);
+                }
+
+
+                .post-content {
+                    .flex-order(@order: 1);
+                    padding-left: 20px;
+                }
+
+                .post-footer {
+                    text-align: right;
+                }
+            }
+        }
+
+
+
+
+        // Post Content
+        // ---------------
+
+        .post-content {
+            padding: 0 20px;
+        }
+
+
+
+
+        // Post Timestamp
+        // ---------------
+
+        .post-footer .timestamp {
+            margin: 40px 20px 20px;
+        }
+    }
+
+
+
+
+    // Post List Footer
+    // ----------------
+
+    .post-list-footer .pagination-list {
+
+        .flex(@display: flex);
+        .justify-content(@justify: space-between);
+
+
+    }
+
+}
+
+.blogpostlist__post-list-footer {
+    margin-top: 20px;
+}
+
+// Responsive Columns
+// ------------------
+
+.responsivecolumns .blogpostlist .post-article {
+    display: block;
+    width: 100%;
+}
+
+.responsivecolumns .blogpostlist .post-footer {
+    padding: 20px 0px 1px;
+}
+
+
+
+
+// --------------------------------
+// Blog Post Page
+// --------------------------------
+
+
+.blogpost {
+
+    .image-link {
+        text-align: center;
+    }
+}
+
+
