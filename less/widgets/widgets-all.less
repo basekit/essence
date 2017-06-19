@@ -38,7 +38,7 @@
     position: absolute;
     width: 100%;
     top: 0;
-    z-index: 10000;
+    z-index: 999999;
 }
 
 .bk-pt-default .template-header {
@@ -52,12 +52,6 @@
     @media @bp-mobile {
         padding: 0 3% 0px;
     }
-}
-
-// For home page and when feature is hidden
-.widget[data-widget-type="feature"].bk-tpl-hidden + .template-header,
-.template-header {
-    position: relative;
 }
 
 
@@ -389,9 +383,7 @@
 // Feature Overlay
 // --------------------------
 
-[data-widget-type="feature"] .widget-overlay {
-    top: 100px !important;
-}
+
 
 
 // -----------------------------
@@ -403,8 +395,8 @@
 
 // Title
 .image-title {
-    font-size: @font__h2--font-size;
-    line-height: @font__h2--line-height;
+    font-size: @font__h3--font-size;
+    line-height: @font__h3--line-height;
 }
 
 .imagewidget {
