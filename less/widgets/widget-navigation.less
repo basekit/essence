@@ -22,12 +22,13 @@
         display: block;
         top: 20px;
         position: absolute;
-        right: 0;
+        right: 20px;
     }
     @media @mobile {
         position: relative;
         display: inline-block;
         float: right;
+        right: 0;
     }
 }
 
@@ -71,10 +72,14 @@
 // Folders
 // -----------------
 
+.bk-pt-default .navigation-list--children {
+    background-color: darken(@color__footer--background, 5%);
+}
+
 .navigation-list--children {
     min-width: 150px;
     padding: 5px;
-    background-color: transparent;
+    background-color: darken(@color__footer--background, 5%);
 }
 
 
@@ -156,14 +161,17 @@
     color: @color__navigation--text--selected;
     margin: 0;
     padding: 40px 30px;
-    background-color: @color__navigation-list--background;
+    background-color: #fff;
     &:hover {
         border-bottom: 0;
     }
-    @media @tablet {
+    @media @bp-tablet {
         border-bottom: 0;
         padding-bottom: 0;
         text-decoration: none;
+        padding: 0px 10px;
+        color: @color__navigation--text;
+        background-color: transparent;
     }
 }
 
@@ -178,7 +186,7 @@
 
 .navigation-item.folder.open-folder .navigation-list--children {
     @media @tablet {
-        background-color: @color-swatch2;
+        background-color: darken(@color__navigation-list--background, 5%);
     }
 }
 
@@ -197,6 +205,7 @@
 
             &.open {
                 visibility: visible;
+                background-color: @color__navigation-list--background;
             }
         }
 

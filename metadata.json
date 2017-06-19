@@ -158,7 +158,7 @@
             "color__footer--background" : "@color-swatch3"
         },
         "site": {
-            "color__body--background": "#F5F5F5",
+            "color__body--background": "#ffffff",
             "color__link--text": "@color-swatch3",
             "color__companyname--text": "@font-swatch10-color",
             "font__companyname--font-family": "@font-swatch10-font-family",
@@ -223,7 +223,7 @@
             "color__navigation--text": "@font-swatch6-color",
             "color__navigation--text--selected": "@color-swatch4",
             "color__navigation--text--hover": "@color-swatch3",
-            "color__navigation-list--background": "@color-swatch1",
+            "color__navigation-list--background": "@color-swatch3",
             "font__navigation--font-family": "@font-swatch6-font-family",
             "font__navigation--font-size": "15px",
             "font__navigation--font-weight": "@font-swatch6-font-weight",

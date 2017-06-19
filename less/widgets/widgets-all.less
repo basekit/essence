@@ -43,7 +43,15 @@
 
 .bk-pt-default .template-header {
     position: relative;
-    background-color: @color__body--background;
+    background-color: @color__footer--background;
+    padding: 0 10% 0px;
+    @media @bp-desktop {
+        padding: 0 5% 0px;
+    }
+
+    @media @bp-mobile {
+        padding: 0 3% 0px;
+    }
 }
 
 // For home page and when feature is hidden
@@ -117,8 +125,8 @@
     }
 }
 
-.bk-pt-default .template-header {
-    background-color: @color-swatch1;
+.bk-pt-default .header-wrapper {
+    padding: 0;
 }
 
 
@@ -851,7 +859,10 @@ legend {
     font-size: 24px;
     line-height: 36px;
     text-align: left;
-    @media @tablet {
+    @media @bp-tablet {
+        padding: 10px 20px;
+    }
+    @media @bp-mobile {
         position: relative;
         padding: 0;
         width: 100%;
@@ -940,6 +951,16 @@ textarea,
     }
 }
 
+// Advanced Contact Form
+// ---------------------
+
+.widget__advancedcontactform {
+    background-color: @color__form--background;
+    padding: 30px;
+    @media @mobile {
+        padding: 10px;
+    }
+}
 
 
 
