@@ -1051,13 +1051,14 @@ textarea,
 
         .account-name:before {
             content: "\f099";
-            color: @bg-color;
             color: #ffffff;
             display: block;
             font-family: 'FontAwesome', sans-serif;
             text-rendering: auto;
             -webkit-font-smoothing: antialiased;
             -moz-osx-font-smoothing: grayscale;
+            font-size: 40px;
+            margin-bottom: 10px;
         }
 
         &:nth-of-type(odd) {
@@ -1188,5 +1189,47 @@ hr.rule {
     }
     @media @bp-mobile {
         padding: 10px 30px;
+    }
+}
+
+
+
+.responsivecolumns {
+
+    .tweet-item {
+        &:nth-of-type(odd) {
+            margin-right: 0;
+            margin-bottom: 20px;
+        }
+    }
+
+    .widget__contactform,
+    .widget__signupform,
+    .widget__blogsearch,
+    .widget__buttonwidget,
+    .widget__clicktocall,
+    .widget__tweet,
+    .widget__dropbox  {
+        margin-bottom: 20px;
+    }
+
+    .columns-three-left,
+    .columns-three-middle,
+    .columns-three-right,
+    .columns-four-first,
+    .columns-four-second,
+    .columns-four-third,
+    .columns-four-fourth {
+
+        legend {
+            position: relative;
+            padding: 0;
+            width: 100%;
+            margin-bottom: 10px;
+        }
+
+        .form-body {
+            width: 100%;
+        }
     }
 }
