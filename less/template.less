@@ -203,6 +203,7 @@ body {
         display: inline-block;
         width: 100%;
         color: #fff;
+        position: relative;
     }
 
     .signupform__form-body {
@@ -215,7 +216,7 @@ body {
     }
 
     .signupform__label {
-        text-align: left;
+        display: none;
     }
 
     .twitter .tweet-item {
@@ -233,6 +234,19 @@ body {
 
     .twitter .tweet-item .account-name:before {
         display: none;
+    }
+
+    .signupform__button {
+        color: #fff;
+        &:after {
+            color: #fff;
+            &:hover {
+                color: @color__button--text;
+            }
+        }
+        &:hover {
+            color: @color__button--text;
+        }
     }
 
     @media @bp-desktop {
