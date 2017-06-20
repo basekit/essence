@@ -10,7 +10,7 @@
 // 2. Media Queries
 // -----------------------------
 
-
+@bp-large: ~"only screen and (max-width: 1400px)";
 @bp-desktop: ~"only screen and (max-width: 1024px)";
 @bp-tablet: ~"only screen and (max-width: 800px)";
 @bp-mobile: ~"only screen and (max-width: 600px)";
@@ -93,7 +93,7 @@ body {
     display: block;
     position: absolute;
     bottom: 0;
-    z-index: 999999;
+    z-index: 99999;
     padding: 20px 10% 10px;
     h1, h2, h3, h4, p, a, span {
         color: @color__feature-strapline--text;
@@ -162,6 +162,9 @@ body {
     .signupform__legend {
         padding: 0;
     }
+    .twitter .tweet-item {
+        min-height: inherit;
+    }
     @media @bp-desktop {
         padding: 20px 5% 20px;
     }
@@ -190,6 +193,26 @@ body {
 
     .social-link {
         font-size: 26px;
+    }
+
+    .signupform__legend {
+        padding: 0;
+        display: inline-block;
+        width: 100%;
+        color: #fff;
+    }
+
+    .signupform__form-body {
+        width: inherit;
+    }
+
+    .signupform__form-group {
+        display: inline-block;
+        margin-bottom: 0;
+    }
+
+    .signupform__label {
+        text-align: left;
     }
 
     @media @bp-desktop {

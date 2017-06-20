@@ -226,7 +226,7 @@
 
 .feature__background-image {
     background-repeat: no-repeat;
-    background-position: bottom center!important;
+    background-position: center center!important;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -256,9 +256,13 @@
     display: table-cell;
     padding: 100px 10% 60px;
     vertical-align: middle;
-    height: 700px;
+    height: 800px;
+    @media @bp-large {
+        height: 700px;
+    }
     @media @bp-desktop {
         padding: 80px 5% 60px;
+        height: 700px;
     }
     @media @mobile {
         height: 600px;
@@ -348,12 +352,10 @@
     color: @color__feature-button--text;
     border-bottom: 5px solid darken(@color__feature-button--background, 5%);
     &:after {
-        content: "\f105";
-        color: #fff;
-        padding: 0 0 0 10px;
-        font-family: fontawesome;
-        vertical-align: middle;
-        font-size: 30px;
+        display: none;
+    }
+    &:hover {
+        color: @color__button--text;
     }
 }
 
@@ -608,7 +610,6 @@ button.pause-toggle {
     color: @contrast-color;
     background-color: transparent;
     font-size: 15px;
-    border-bottom: 0;
     &:hover {
         background-color: transparent;
         color: @contrast-color;
@@ -731,11 +732,13 @@ input, textarea, button, .button {
 .button {
     .transition(@duration:0.2s, @ease:ease-in-out); // Mixin
     line-height: @font__button--line-height;
-    padding: 10px 15px;
-    border-bottom: 5px solid darken(@color__feature-button--background, 5%);
+    padding: 10px 30px;
+    border: 3px solid @color__feature-button--background;
+    border-radius: 100px;
+    background-color: transparent;
     &:after {
         content: "\f105";
-        color: #fff;
+        color: @color__button--text;
         padding: 0 0 0 10px;
         font-family: fontawesome;
         vertical-align: middle;
@@ -757,7 +760,6 @@ input, textarea, button, .button {
 .ecombasket__basket-toggle,
 .button--quantity,
 .responsiveslideshow__previous-button,
-.responsiveslideshow__next-button,
 .responsiveslideshow__pause-toggle {
     &:after {
         display: none;
@@ -767,6 +769,14 @@ input, textarea, button, .button {
 .button--next {
     &:before {
         display: none;
+    }
+}
+
+.responsiveslideshow__next-button {
+    &:after {
+        padding: 0;
+        content: "\f054";
+        font-size: 15px;
     }
 }
 
@@ -1051,7 +1061,11 @@ textarea,
         }
 
         &:nth-of-type(odd) {
-            background-color: fade(@color__twitter-item--background,80%);
+            margin-right: 20px;
+            @media @bp-tablet {
+                margin-right: 0;
+                margin-bottom: 20px;
+            }
         }
     }
 
@@ -1165,7 +1179,14 @@ hr.rule {
 // -----------------------------
 
 .clicktocall__phone-number-link {
+    color: @color__button--text;
     &:hover {
         text-decoration: none;
+    }
+    &:after {
+        display: none;
+    }
+    @media @bp-mobile {
+        padding: 10px 30px;
     }
 }
