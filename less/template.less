@@ -218,6 +218,23 @@ body {
         text-align: left;
     }
 
+    .twitter .tweet-item {
+        min-height: inherit;
+        text-align: right;
+        max-width: 50%;
+        float: right;
+        @media @mobile {
+            text-align: left;
+            max-width: 100%;
+            float: inherit;
+            padding: 0;
+        }
+    }
+
+    .twitter .tweet-item .account-name:before {
+        display: none;
+    }
+
     @media @bp-desktop {
         display: block;
         text-align: center;
