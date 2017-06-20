@@ -167,6 +167,7 @@ body {
     }
     .twitter .tweet-item {
         min-height: inherit;
+        margin-bottom: 0;
     }
     @media @bp-desktop {
         padding: 20px 5% 20px;
@@ -245,6 +246,12 @@ body {
             }
         }
         &:hover {
+            color: @color__button--text;
+        }
+    }
+
+    .signupform__button {
+        &:after:hover {
             color: @color__button--text;
         }
     }
