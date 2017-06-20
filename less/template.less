@@ -222,15 +222,8 @@ body {
 
     .twitter .tweet-item {
         min-height: inherit;
-        text-align: right;
-        max-width: 50%;
-        float: right;
-        @media @mobile {
-            text-align: left;
-            max-width: 100%;
-            float: inherit;
-            padding: 0;
-        }
+        text-align: left;
+        padding: 0;
     }
 
     .twitter .tweet-item .account-name:before {
@@ -246,6 +239,10 @@ body {
             background-color: transparent;
             color: #fff;
         }
+    }
+
+    .profile__map {
+        width: 400px;
     }
 
     @media @bp-desktop {
