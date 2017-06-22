@@ -105,7 +105,7 @@
     padding: 0;
     margin: 5px 10px;
     padding-bottom: 1px;
-    @media @tablet {
+    @media @bp-tablet {
         margin: 15px 10px;
     }
     &:hover {
@@ -113,12 +113,13 @@
         display: inline-block;
         color: @color__navigation--text;
         padding-bottom: 1px;
-        margin: 5px 10px;
-        @media @tablet {
+        margin: 15px 10px;
+        @media @bp-tablet {
             border-bottom: 0;
             display: block;
             margin: 15px 10px;
             text-decoration: underline;
+            box-shadow: none;
         }
     }
 }

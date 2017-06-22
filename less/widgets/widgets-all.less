@@ -970,11 +970,11 @@ textarea,
 
 // Item Link
 .social-link {
-    color: lighten(@color-swatch4,10%);
+    color: @color-swatch4;
     .transition(@duration:0.2s, @ease:ease-in-out); // Mixin
     font-size: 30px;
     &:hover {
-        color: @color-swatch4;
+        color: lighten(@color-swatch4,15%);
         text-decoration: none;
     }
 }
