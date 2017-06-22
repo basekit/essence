@@ -1,5 +1,5 @@
 // --------------------------------
-// Mono: plugin-blog.less
+// Sky: plugin-blog.less
 // --------------------------------
 
 
@@ -88,9 +88,9 @@
                     flex: 1 0 45%;
             .flex-order(@order: 1);
 
-            padding: 0px 40px;
+            padding: 0px 20px;
             margin: 0;
-            @media @bp-tablet {
+            @media @tablet {
                 padding: 20px 0px;
             }
             @media @mobile {
@@ -177,7 +177,7 @@
         // ---------------
 
         .post-content {
-            padding: 0 20px;
+            padding: 20px 0;
         }
 
 
@@ -187,11 +187,7 @@
         // ---------------
 
         .post-footer .timestamp {
-            margin: 20px 40px 40px;
-            @media @bp-tablet {
-                padding: 0;
-                margin: 0;
-            }
+            margin: 0px 0 40px;
         }
     }
 
@@ -223,6 +219,16 @@
 
 
 .blogpost {
+
+    padding: 10px 10% 10px;
+
+    @media @bp-tablet {
+        padding: 10px 5% 10px;
+    }
+
+    @media @bp-mobile {
+        padding: 10px 3% 10px;
+    }
 
     .image-link {
         text-align: center;
