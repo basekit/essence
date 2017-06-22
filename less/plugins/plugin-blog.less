@@ -12,7 +12,7 @@
 .blogpostlist {
 
     margin-bottom: 20px;
-
+    padding: 20px 10% 20px;
 
     // Blog Article
     // ---------------
@@ -88,8 +88,11 @@
                     flex: 1 0 45%;
             .flex-order(@order: 1);
 
-            padding: 20px 40px;
+            padding: 0px 40px;
             margin: 0;
+            @media @bp-tablet {
+                padding: 20px 0px;
+            }
             @media @mobile {
                 padding: 20px;
             }
@@ -115,6 +118,9 @@
             .flex-order(@order: 2);
             text-align: right;
             margin-top: -50px;
+            @media @bp-tablet {
+                text-align: left;
+            }
 
             .timestamp {
                 margin: 0px 20px 40px;
@@ -130,6 +136,8 @@
     // -----------------
 
     @media @bp-tablet {
+
+        padding: 20px 5% 20px;
 
 
         // Sets image and content above and below each other
@@ -181,6 +189,10 @@
 
         .post-footer .timestamp {
             margin: 20px 40px 40px;
+            @media @bp-tablet {
+                padding: 0;
+                margin: 0;
+            }
         }
     }
 
