@@ -10,13 +10,19 @@
 <footer class="template-footer">
     <div class="footer-wrapper">
 
-        {{widget('content', 'footer-content', {
-        content: '<p>&copy; Copyright</p>'
-        })|raw}}
+        <div class="footer-left">
 
+            {{widget('content', 'footer-content', {
+            content: '<p>&copy; Copyright</p>'
+            })|raw}}
+
+        </div>
+
+        <div class="footer-right">
         
-        {{widget('profile', 'footer-profile', { 'profileType':'socialicons' })|raw}}
+            {{widget('profile', 'footer-profile', { 'profileType':'socialicons' })|raw}}
 
+        </div>
 
     </div>
 </footer>
