@@ -180,15 +180,11 @@ body {
 }
 
 .footer-left {
-    -webkit-order: 0;
-    -ms-flex-order: 0;
-    order: 0;
+    .flex-order(@order: 0);
     -webkit-flex: 1 1 50%;
     -ms-flex: 1 1 50%;
     flex: 1 1 50%;
-    -webkit-align-self: auto;
-    -ms-flex-item-align: auto;
-    align-self: auto;
+    .align-self(@align: auto);
 
     text-align: left;
 }
