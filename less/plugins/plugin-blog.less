@@ -136,6 +136,10 @@
             display: inline-block;
             padding: 15px 20px;
             text-decoration: none;
+            &:hover {
+                background-color: @color__button--background--hover;
+                .transition(@duration:0.2s, @ease:ease-in-out); // Mixin
+            }
         }
 
 
@@ -258,6 +262,12 @@
     .post-category {
         margin-bottom: 10px;
     }
+
+    .category-title,
+    .tags-title {
+        font-weight: bold;
+    }
+
 }
 
 
