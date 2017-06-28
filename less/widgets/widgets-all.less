@@ -721,8 +721,9 @@ input, textarea, button, .button {
 .form-body {
     width: 70%;
     margin: 0 0 0 auto;
-    @media @bp-mobile {
-        margin: 0px 0;
+
+    @media @bp-tablet {
+        margin: 0;
         width: 100%;
     }
 }
@@ -767,7 +768,9 @@ legend {
     line-height: 36px;
     text-align: left;
     @media @bp-tablet {
-        padding: 10px 20px;
+        padding: 0 0 20px 0;
+        position: relative;
+        width: 100%;
     }
     @media @bp-mobile {
         position: relative;
