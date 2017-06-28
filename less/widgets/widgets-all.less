@@ -73,6 +73,7 @@
 
 .header-wrapper {
     padding: 0 10% 60px;
+    position: relative;
     @media @bp-desktop {
         padding: 0 5% 60px;
     }
@@ -112,18 +113,11 @@
     -ms-flex: 0 0 auto;
     flex: 0 0 auto;
     .align-self(@align: auto);
-
-    margin-right: 10px;
+    padding: 10px 10px 10px 0;
 
     // Layout
     text-align: center;
     max-width: 100%;
-
-    @media @tablet {
-        padding: 10px 0px;
-        display: inline-block;
-        vertical-align: middle;
-    }
 
     img, .logo {
         line-height: 0;
@@ -166,15 +160,12 @@
     -ms-flex: 0 0 auto;
     flex: 0 0 auto;
     .align-self(@align: auto);
+    padding: 10px 0;
 
     @media @tablet {
         display: inline-block;
-        margin-top: 20px;
     }
 
-    @media @mobile {
-        margin-top: 0;
-    }
 }
 
 
@@ -277,8 +268,6 @@
 
 // Feature Headline
 .feature__headline {
-    display: inline;
-    max-width: 140px;
     padding-bottom: 10px;
     background-repeat: repeat-x;
     background-position: 0 90%;
@@ -315,7 +304,7 @@
 // Feature Button
 // ---------------
 
-.feature__button { 
+.feature__button {
     margin: 10px 0 0 0;
     background-color: @color__feature-button--background;
     color: @color__feature-button--text;
@@ -671,7 +660,7 @@ input, textarea, button, .button {
         padding: 0 0 0 10px;
         font-family: fontawesome;
         vertical-align: middle;
-        font-size: 26px;
+        font-size: 22px;
     }
 
     &:focus {

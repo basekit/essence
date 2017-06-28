@@ -5,7 +5,7 @@
 // Header Extended Navigation
 .header-extendednavigation {
     // Flex child
-    .flex-order(@order: 4); 
+    .flex-order(@order: 4);
     .align-self(@align: auto);
     -webkit-box-flex: 1;
     -moz-box-flex: 1;
@@ -15,13 +15,12 @@
     @media @tablet {
         display: block;
         position: absolute;
-        right: 20px;
+        right: 0;
     }
     @media @mobile {
         position: relative;
         display: inline-block;
         float: right;
-        right: 0;
     }
 }
 
@@ -215,12 +214,14 @@
 
     // Clears margin on ul, hides navigation on mobile (made visible in conjunction with navigation-toggle)
         .navigation-list {
+            background-color: @color__navigation-list--background;
             margin: 0;
+            opacity: 0;
             visibility: hidden;
 
             &.open {
+                opacity: 1;
                 visibility: visible;
-                background-color: @color__navigation-list--background;
             }
         }
 
@@ -387,7 +388,6 @@
     height: 47px;
     padding: 22px 0px 22px 20px;
     position: relative;
-    right: 30px;
     text-indent: 9999px;
     overflow: hidden;
     float: right;
@@ -397,7 +397,6 @@
 
     @media @bp-tablet {
         display: block;
-        right: 0;
     }
 
 
