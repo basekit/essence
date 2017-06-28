@@ -83,7 +83,20 @@
 }
 
 .footer-wrapper {
+    .flex-wrap(nowrap);
     .justify-content(space-between);
+
+    @media @bp-mobile {
+        display: block;
+    }
+
+    .footer-right {
+        .flex(1 0 auto);
+
+        @media @bp-mobile {
+            text-align: left;
+        }
+    }
 }
 
 .bk-pt-default .header-wrapper {
