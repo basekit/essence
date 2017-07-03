@@ -181,21 +181,19 @@ body {
 
 .footer-left {
     .flex-order(@order: 0);
-    -webkit-flex: 1 1 50%;
-    -ms-flex: 1 1 50%;
-    flex: 1 1 50%;
+    .fleX(1 1 50%);
     .align-self(@align: auto);
-
+    padding-right: 30px;
     text-align: left;
+
+    @media @bp-mobile {
+        padding-left: 0;
+    }
 }
 
 .footer-right {
-        -webkit-order: 1;
-    -ms-flex-order: 1;
-    order: 1;
-    -webkit-align-self: auto;
-    -ms-flex-item-align: auto;
-    align-self: auto;
+    .flex-order(1);
+    .align-self(auto);
 }
 
 
