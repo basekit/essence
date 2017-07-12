@@ -69,7 +69,8 @@ body {
 .bk-pt-home .template-footer {
     width: 100%;
     margin: 0 auto;
-    padding: 0px 10% 0px;
+    max-width: 1200px;
+    padding: 0px 5% 0px;
     @media @bp-desktop {
         padding: 0px 5% 0px;
     }
@@ -94,15 +95,15 @@ body {
     position: absolute;
     bottom: 0;
     z-index: 99999;
-    padding: 20px 10% 10px;
+    padding: 20px 0 10px;
     h1, h2, h3, h4, p, a, span {
         color: @color__feature-strapline--text;
     }
     @media @bp-desktop {
-        padding: 10px 5% 0px;
+        padding: 10px 0 0px;
     }
     @media @mobile {
-        padding: 10px 3% 0px;
+        padding: 10px 0 0px;
     }
 }
 
@@ -145,8 +146,8 @@ body {
 }
 
 .template-content {
-    padding-top: 60px;
-    padding-bottom: 40px;
+    padding-top: 70px;
+    padding-bottom: 50px;
 
     @media @tablet {
         padding-top: 40px;
@@ -162,21 +163,7 @@ body {
 // -----------------------------
 
 .outer-footer {
-    padding: 20px 10% 20px;
     background-color: #eeeeee;
-    .signupform__legend {
-        padding: 0;
-    }
-    .twitter .tweet-item {
-        min-height: inherit;
-        margin-bottom: 0;
-    }
-    @media @bp-desktop {
-        padding: 20px 5% 20px;
-    }
-    @media @bp-mobile {
-        padding: 10px 3% 10px;
-    }
 }
 
 .footer-left {
@@ -194,6 +181,8 @@ body {
 .footer-right {
     .flex-order(1);
     .align-self(auto);
+    .flex(@display: flex);
+    .justify-content(@justify: flex-end);
 }
 
 

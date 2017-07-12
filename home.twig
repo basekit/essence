@@ -20,9 +20,13 @@
                 {% include "includes/header.twig" %}
     
                 <div class="homepage-info">
-                    {{widget('content', 'sidebarcontent', {
-                        content: '<p>Lorem ipsum dolor sit amet...</p>'
-                    })|raw}}
+
+                    <div class="container">
+                        {{widget('content', 'sidebarcontent', {
+                            content: '<p>Lorem ipsum dolor sit amet...</p>'
+                        })|raw}}
+                    </div>
+
                 </div>
 
             </div>
