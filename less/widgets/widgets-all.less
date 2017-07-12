@@ -69,6 +69,10 @@
     .align-items(@align: center);
 
     width: 100%;
+    max-width: 1200px;
+    margin: 0px auto;
+
+    padding: 0 5%;
 }
 
 .header-wrapper {
@@ -85,6 +89,14 @@
     .flex-wrap(nowrap);
     .justify-content(space-between);
 
+    @media @bp-large {
+        padding: 0 5%;
+    }
+
+    @media @bp-desktop {
+        padding: 0%;
+    }
+
     @media @bp-mobile {
         display: block;
     }
@@ -98,6 +110,7 @@
 
         @media @bp-mobile {
             text-align: left;
+            display: block;
         }
     }
 }
