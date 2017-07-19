@@ -277,7 +277,7 @@
 
             background: @color__feature-content--background; /* fallback for old browsers */
 
-            opacity: 0.4;
+            opacity: 0.5;
         }
     }
 }
@@ -305,9 +305,11 @@
     font-weight: @font__feature-headline--font-weight;
     font-size: @font__feature-headline--font-size;
     line-height: @font__feature-headline--line-height;
+    max-width: 70%;
     @media @bp-tablet {
         font-size: bkscale(@font__feature-headline--font-size,0.6);
         line-height: bkscale(@font__feature-headline--line-height,0.6);
+        max-width: 100%;
     }
     @media @mobile {
         font-size: bkscale(@font__feature-headline--font-size,0.4);
