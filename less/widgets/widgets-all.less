@@ -68,20 +68,18 @@
     .align-content(@align: center);
     .align-items(@align: center);
 
-    width: 100%;
+    width: 90%;
     max-width: 1200px;
     margin: 0px auto;
-
-    padding: 0 5%;
 }
 
 .header-wrapper {
     position: relative;
     max-width: 1200px;
     margin: 0px auto;
-    padding: 0 5% 60px;
+
     @media @mobile {
-        padding: 0 3% 60px;
+
     }
 }
 
@@ -243,19 +241,17 @@
 
 .feature__content-wrap {
     display: table-cell;
-    padding: 100px 0% 60px;
     vertical-align: middle;
     height: 800px;
+    padding: 0;
     @media @bp-large {
         height: 700px;
     }
     @media @bp-desktop {
-        padding: 80px 0% 60px;
         height: 700px;
     }
     @media @mobile {
         height: 600px;
-        padding: 80px 0% 60px;
     }
 }
 
@@ -283,11 +279,11 @@
 }
 
 .feature__content-inner-wrap {
+    width: 90%;
     max-width: 1200px;
     z-index: 9;
     position: relative;
     margin: 0px auto;
-    padding: 0 5%;
     @media @mobile {
         max-width: 100%;
     }
@@ -299,13 +295,11 @@
 
 // Feature Headline
 .feature__headline {
-    padding-bottom: 10px;
-    background-repeat: repeat-x;
-    background-position: 0 90%;
+    padding-bottom: 0;
     font-weight: @font__feature-headline--font-weight;
     font-size: @font__feature-headline--font-size;
     line-height: @font__feature-headline--line-height;
-    max-width: 70%;
+    max-width: 840px;
     @media @bp-tablet {
         font-size: bkscale(@font__feature-headline--font-size,0.6);
         line-height: bkscale(@font__feature-headline--line-height,0.6);
