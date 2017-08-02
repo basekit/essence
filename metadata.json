@@ -1,25 +1,34 @@
 {
-    "name": "sky-template",
+    "name": "Invest",
     "thumbnail": "thumbnail.png",
-    "screenshot": "sky-screenshot.jpg",
+    "screenshot": "invest-screenshot.jpg",
     "widgetVersion":2,
     "pageTypes": ["home"],
     "templateType":"standard",
-    "images": [
-        "images/image-1.jpg",
-        "images/logo.svg",
-        "images/feature-bg.jpg"
+    "images":[
+        "images/template-images/cloud-image-1.jpg",
+        "images/template-images/cloud-image-2.jpg",
+        "images/template-images/cloud-image-3.jpg",
+        "images/template-images/cloud-image-4.jpg",
+        "images/template-images/cloud-image-5.jpg",
+        "images/template-images/cloud-image-6.jpg",
+        "images/template-images/cloud-image-7.jpg",
+        "images/template-images/cloud-image-8.jpg",
+        "images/template-images/cloud-image-9.jpg",
+        "images/template-images/cloud-image-10.jpg",
+        "images/template-images/cloud-image-11.jpg",
+        "images/template-images/cloud-image-12.jpg"
     ],
     "colorSwatches":
     {
         "Swatch 1": {
             "color1":"#ffffff",
-            "color2":"#292C4C",
+            "color2":"#344446",
             "color3":"#feca00",
-            "color4":"#292C4C",
+            "color4":"#344446",
             "color5":"#7e7e7e",
             "color6":"#313131",
-            "color7":"#E0E0E0"
+            "color7":"#3e4841"
         },
         "Swatch 2": {
             "color1":"#ffffff",
@@ -148,18 +157,18 @@
     },
     "styles": {
         "colors": {
-            "color__primary": "@color-swatch4",
-            "color__secondary": "@color-swatch7"
+            "color__primary": "#30e9ff",
+            "color__secondary": "#344446"
         },
         "header": {
-            "color__header--background" : "transparent"
+            "color__header--background" : "@color__secondary"
         },
         "footer": {
             "color__footer--background" : "@color-swatch4"
         },
         "site": {
             "color__body--background": "#ffffff",
-            "color__link--text": "@color-swatch4",
+            "color__link--text": "@color__secondary",
             "color__companyname--text": "@font-swatch10-color",
             "font__companyname--font-family": "@font-swatch10-font-family",
             "font__companyname--font-size": "@font-swatch10-font-size",
@@ -168,11 +177,11 @@
             "font__companyname--letter-spacing": "@font-swatch10-letter-spacing"
         },
         "typography": {
-            "color__h1--text": "@font-swatch1-color",
-            "color__h2--text": "@font-swatch2-color",
-            "color__h3--text": "@font-swatch3-color",
-            "color__h4--text": "@font-swatch4-color",
-            "color__p--text": "#3e4167",
+            "color__h1--text": "@color__secondary",
+            "color__h2--text": "@color__secondary",
+            "color__h3--text": "@color__secondary",
+            "color__h4--text": "@color__secondary",
+            "color__p--text": "#545a56",
             "font__heading" : "@font-swatch1-font-family",
             "font__body" : "@font-swatch5-font-family",
             "font__h1--font-family" : "@font-swatch1-font-family",
@@ -205,10 +214,10 @@
             "color__feature-content--background" : "@color-swatch4",
             "color__feature-headline--text": "@font-swatch8-color",
             "color__feature-strapline--text": "@font-swatch9-color",
-            "color__feature-button--text": "@color-swatch3",
+            "color__feature-button--text": "@color__primary",
             "color__feature-button--background": "transparent",
             "color__feature-button--background--hover": "@color-swatch3",
-            "color__feature-button--border": "#feca00",
+            "color__feature-button--border": "@color__primary",
             "font__feature-headline--font-family" : "@font-swatch8-font-family",
             "font__feature-headline--font-size" : "@font-swatch8-font-size",
             "font__feature-headline--font-weight" : "@font-swatch8-font-weight",
@@ -223,7 +232,7 @@
         "navigation": {
             "color__navigation--text": "@font-swatch6-color",
             "color__navigation--text--selected": "@color-swatch4",
-            "color__navigation--text--hover": "@color-swatch3",
+            "color__navigation--text--hover": "@color__primary",
             "color__navigation-list--background": "@color-swatch4",
             "color__navigation-item--background": "#fff",
             "font__navigation--font-family": "@font-swatch6-font-family",
@@ -234,9 +243,9 @@
         },
         "button": {
             "color__button--background": "transparent",
-            "color__button--background--hover": "@color-swatch3",
-            "color__button--text": "@color-swatch4",
-            "color__button--border": "#feca00",
+            "color__button--background--hover": "@color__primary",
+            "color__button--text": "@color__secondary",
+            "color__button--border": "@color__primary",
             "font__button--font-family": "@font-swatch7-font-family",
             "font__button--font-size": "@font-swatch7-font-size",
             "font__button--font-weight": "@font-swatch7-font-weight",
@@ -246,20 +255,24 @@
         "form": {
             "color__form--background" :"#eee"
         },
+         "socialicons": {
+            "color__socialicons--icon" : "@color__secondary"
+        },
         "twitter": {
-            "color__twitter-item--background": "@color-swatch4",
+            "color__twitter-item--background": "@color__secondary",
             "color__twitter-account-name--text": "@color__body--background",
             "color__twitter-tweet--text": "@color__body--background"
         },
         "gallery": {
             "color__gallery-caption--background": "fade(@color-swatch4,50%)",
-            "color__gallery-title--text": "@color-swatch1",
-            "color__gallery-description--text": "@color-swatch1"
+            "color__gallery-title--text": "#fff",
+            "color__gallery-description--text": "#fff"
         },
         "slideshow": {
             "color__slideshow-caption--background":  "fade(@color-swatch4,50%)",
-            "color__slideshow-title--text": "@color-swatch1",
-            "color__slideshow-description--text": "@color-swatch1"
+            "color__slideshow-title--text": "#fff",
+            "color__slideshow-pagination-item--text--selected": "@color__primary",
+            "color__slideshow-description--text": "#fff"
         },
         "ecommerce": {
             "color__ecomproductslist-product-item--background": "@color-swatch1",

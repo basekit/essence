@@ -123,19 +123,18 @@
             .timestamp {
                 margin: 0 0 40px 40px;
                 font-size: 14px;
-                color: @paragraph-color;
             }
         }
 
         .read-more {
             margin: 10px 0;
-            border: 3px solid @color-swatch3;
+            border: 3px solid @color__button--border;
             border-radius: 100px;
             display: inline-block;
             padding: 15px 20px;
             text-decoration: none;
             &:hover {
-                background-color: @color__button--background--hover;
+                background-color: @color__button--border;
                 .transition(@duration:0.2s, @ease:ease-in-out); // Mixin
             }
         }
@@ -280,15 +279,6 @@
         @media @bp-mobile {
             display: block;
         }
-    }
-
-
-    .post-footer .timestamp {
-        border: 3px solid @color-swatch3;
-        border-radius: 100px;
-        display: inline-block;
-        padding: 15px 20px;
-        margin: 0;
     }
 
     .image {
