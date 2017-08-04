@@ -1,2 +1,2 @@
-# sky-template
-Amazon Japanese Template
+# Zixo
+Basekit / Amazon Japanese Template
