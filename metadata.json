@@ -1,7 +1,7 @@
 {
     "name": "Essence",
-    "thumbnail": "essence-screenshot.jpg",
-    "screenshot": "essence-screenshot-high.jpg",
+    "thumbnail": "thumbnail.png",
+    "screenshot": "essence-screenshot.jpg",
     "widgetVersion":2,
     "pageTypes": ["home"],
     "templateType":"standard",
