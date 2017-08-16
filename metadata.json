@@ -1,7 +1,7 @@
 {
-    "name": "Zixo",
-    "thumbnail": "thumbnail.png",
-    "screenshot": "zixo-screenshot.jpg",
+    "name": "Essence",
+    "thumbnail": "essence-screenshot.jpg",
+    "screenshot": "essence-screenshot-high.jpg",
     "widgetVersion":2,
     "pageTypes": ["home"],
     "templateType":"standard",

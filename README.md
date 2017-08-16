@@ -1,2 +1,2 @@
-# Zixo
+# Essence
 Basekit / Amazon Japanese Template
